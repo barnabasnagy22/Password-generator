@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jelszógenerátor</title>
+    <title>Password generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-    <h2>Jelszógenerátor</h2>
+    <h2>Password generator</h2>
     
-    <label for="length">Jelszó hossza:</label>
+    <label for="length">Password lenght:</label>
     <input type="number" id="length" value="12" min="4" max="30"><br>
 
-    <input type="checkbox" id="uppercase" checked> <label for="uppercase">Nagybetűk</label><br>
-    <input type="checkbox" id="lowercase" checked> <label for="lowercase">Kisbetűk</label><br>
-    <input type="checkbox" id="numbers" checked> <label for="numbers">Számok</label><br>
-    <input type="checkbox" id="symbols" checked> <label for="symbols">Speciális karakterek</label><br>
+    <input type="checkbox" id="uppercase" checked> <label for="uppercase">Uppercase</label><br>
+    <input type="checkbox" id="lowercase" checked> <label for="lowercase">Lower case</label><br>
+    <input type="checkbox" id="numbers" checked> <label for="numbers">Numbers</label><br>
+    <input type="checkbox" id="symbols" checked> <label for="symbols">Special chars</label><br>
 
     <button onclick="generatePassword()">Jelszó generálása</button>
 
-    <h3>Generált jelszó:</h3>
+    <h3>Generated password:</h3>
     <input type="text" id="password" readonly>
 </div>
 
